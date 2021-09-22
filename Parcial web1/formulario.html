@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Parcial Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h4 class="grey-text text-darken-2 center-align offset-s4 s4"><b>Web</b>Developer</h1>
+                <form action="formulario2.html" method="GET" class="col offset-s3 s6 center-align" id="form">
+
+                    <div class="row card-panel">
+                        <div class="center-align col s12">
+                            <h6>formulario de afiliacion</h6>
+                        </div>
+                        <div class="input-field col s12 grupo-nombre">
+                            <i class="material-icons prefix right">account_circle</i>
+                            <input class="left-align" name="nombre" type="text" placeholder="Nombre" id="input-nombre">
+
+                        </div>
+                        <div class="input-field col s12 grupo-correo ">
+                            <i class="material-icons prefix">email</i>
+                            <input type="text" name="email" placeholder="Correo" required id="input-email">
+
+                        </div>
+                        <div class="input-field col s12 grupo-telefono">
+                            <i class="material-icons prefix">phone</i>
+                            <input type="text" name="telefono" placeholder="Eg. 57 3154638324" value="" required id="input-telefono"
+                                pattern="[0-9]{2} [0-9]{10}">
+
+                        </div>
+                        <div class="row">
+
+                            <div class="input-field col offset-s2 s7  grupo-gustos">
+                                <!-- <i class="material-icons prefix">cat</i> -->
+                                <input type="text" name="gustos" id="gustos" >
+
+
+
+                            </div>
+                            <div class="btn-field col s1 grupo-boton">
+                                <a class="waves-effect waves-light btn-small" id="gustosbtn" onclick="agregarTabla()">Gustos</a>
+
+                            </div>
+                        </div>
+                        <div class="card-panel">
+                            <table  id="tabla">
+                                <thead>
+                                    <tr>
+                                        <th>Gusto</th>
+                                        <th>%</th>
+                                        <th>edit</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col s12 btnprrfo" id="mostrar">
+                            
+                                <p id="texto-ocultar" class="left-align">Pulse aceptar para guardar los cambios o cancelar para anularlos</p>
+                                <button class="btn grey" type="submit" onclick="getFormData();">Aceptar</button>
+                                <!-- <a class="waves-effect waves-light btn-small btnaceptar grey" type="submit" id="aceptar">aceptar</a> -->
+                                <!-- <a class="waves-effect waves-light btn-small btncancelar red" id="cancelar">cancelar</a> -->
+                                 <button class="btn red" type="submit">Cancelar</button>           
+                            </div>
+                            
+                            
+                                
+
+
+                    </div>
+
+                </form>
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="grillas.js"></script>
+    
+</body>
+
+</html>
